@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="#4CAF50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="50dp"
+                android:text="News Aggregator"
+                android:textColor="#000"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_stories"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="135dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="top_stories_activity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Top Stories"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/national_news"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="275dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="national_act">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="National"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/world_news"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="415dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="world_act">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="World"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/technology_news"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="555dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="technology_act">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Technology"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sports_news"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="695dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="sports_act">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sports"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/movies_news"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="835dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="movies_act">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Entertainement"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/business_news"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="975dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="business_act">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Business"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/health_news"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1105dp"
+            android:textAlignment="center"
+            android:background="#f1ebeb"
+            android:onClick="health_act">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Health"
+                    android:textColor="#000"
+                    android:paddingTop="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
