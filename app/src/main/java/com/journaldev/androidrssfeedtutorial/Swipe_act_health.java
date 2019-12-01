@@ -38,11 +38,11 @@ public class Swipe_act_health extends AppCompatActivity {
         technology_link.add("http://www.indianexpress.com/section/lifestyle/health/feed/");
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.ic_android_black_24dp, "NDTV", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        models.add(new Model(R.drawable.ic_android_black_24dp, "Zee News", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        models.add(new Model(R.drawable.ic_android_black_24dp, "Mediline Plus", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
+        models.add(new Model(R.drawable.ndtv, "NDTV", "New Delhi Television Limited (NDTV) is an Indian television media company founded in 1988 by Radhika Roy, a journalist"));
+        models.add(new Model(R.drawable.zee_news, "Zee News", "Zee News is an Indian pay television channel and also the flagship property of Zee Media"));
+        models.add(new Model(R.drawable.medline, "Mediline Plus", "Medline Plus is an online information service produced by the United States National Library of Medicine"));
 //        models.add(new Model(R.drawable.ic_android_black_24dp, "News 18", "Business cards are cards bearing business information about a company or individual."));
-        models.add(new Model(R.drawable.ic_android_black_24dp, "Indian Express", "Business cards are cards bearing business information about a company or individual."));
+        models.add(new Model(R.drawable.indian_express, "Indian Express", "The Indian Express is an English-language Indian daily newspaper which is published in Mumbai by Indian Express Group"));
 
 
         adapter = new Adapter(models, this);
@@ -52,9 +52,9 @@ public class Swipe_act_health extends AppCompatActivity {
         viewPager.setPadding(130, 0, 130, 0);
 
         Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
+//                getResources().getColor(R.color.color1),
+//                getResources().getColor(R.color.color2),
+//                getResources().getColor(R.color.color3),
                 getResources().getColor(R.color.color4)
         };
 

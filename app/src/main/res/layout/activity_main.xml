@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:orientation="vertical"
-            android:background="#4CAF50">
+            android:background="#1EC5BA">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -48,9 +48,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Top Stories"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/ic_menu_home"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="16dp"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_marginTop="10dp"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="35dp"/>
             </LinearLayout>
@@ -75,9 +80,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="National"
+                    android:layout_marginLeft="45dp"
+                    android:drawableLeft="@drawable/ic_national"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="20dp"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_marginTop="10dp"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="35dp"/>
             </LinearLayout>
@@ -102,9 +112,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="World"
+                    android:layout_marginLeft="63dp"
+                    android:drawableLeft="@drawable/ic_menu_world"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="20dp"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_marginTop="10dp"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="35dp"/>
             </LinearLayout>
@@ -128,9 +143,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Technology"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/ic_tech"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="17dp"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_marginTop="10dp"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="35dp"/>
             </LinearLayout>
@@ -155,9 +175,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Sports"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/ic_menu_sport"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="20dp"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_marginTop="10dp"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="35dp"/>
             </LinearLayout>
@@ -183,11 +208,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Entertainement"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/ic_menu_culture"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="17dp"
+                    android:drawableRight="@drawable/ic_arrow"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
-                    android:textSize="35dp"/>
+                    android:textSize="28dp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -210,9 +240,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Business"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/ic_menu_business"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="20dp"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_marginTop="10dp"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="35dp"/>
             </LinearLayout>
@@ -226,7 +261,8 @@
             android:layout_height="120dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="1105dp"
+            android:layout_marginTop="1115dp"
+            android:layout_marginBottom="20dp"
             android:textAlignment="center"
             android:background="#f1ebeb"
             android:onClick="health_act">
@@ -238,9 +274,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Health"
+                    android:layout_marginLeft="50dp"
+                    android:drawableLeft="@drawable/ic_health"
+                    android:layout_marginBottom="45dp"
+                    android:drawablePadding="20dp"
+                    android:drawableRight="@drawable/ic_arrow"
+                    android:layout_marginTop="10dp"
                     android:textColor="#000"
                     android:paddingTop="20dp"
-                    android:textAlignment="center"
                     android:textStyle="bold"
                     android:textSize="35dp"/>
             </LinearLayout>

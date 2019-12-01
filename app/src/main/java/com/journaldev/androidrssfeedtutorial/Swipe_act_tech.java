@@ -40,11 +40,11 @@ public class Swipe_act_tech extends AppCompatActivity {
         technology_link.add("http://indianexpress.com/section/technology/feed/");
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.ic_android_black_24dp, "NDTV", "Brochure is an informative paper document (often also used for advertising) that can be folded into a template"));
-        models.add(new Model(R.drawable.ic_android_black_24dp, "Zee News", "Sticker is a type of label: a piece of printed paper, plastic, vinyl, or other material with pressure sensitive adhesive on one side"));
-        models.add(new Model(R.drawable.ic_android_black_24dp, "Tech Republic", "Poster is any piece of printed paper designed to be attached to a wall or vertical surface."));
-        models.add(new Model(R.drawable.ic_android_black_24dp, "News 18", "Business cards are cards bearing business information about a company or individual."));
-        models.add(new Model(R.drawable.ic_android_black_24dp, "Indian Express", "Business cards are cards bearing business information about a company or individual."));
+        models.add(new Model(R.drawable.ndtv, "NDTV", "New Delhi Television Limited (NDTV) is an Indian television media company founded in 1988 by Radhika Roy, a journalist"));
+        models.add(new Model(R.drawable.zee_news, "Zee News", "Zee News is an Indian pay television channel and also the flagship property of Zee Media"));
+        models.add(new Model(R.drawable.tech_republic, "Tech Republic", "TechRepublic is a social community for IT professionals, with advice on best practices and tools for the day-to-day needs of IT decision-makers"));
+        models.add(new Model(R.drawable.news18, "News 18", "Network18 Media informally is referred to as the Network18 Group which is an Indian media and entertainment group"));
+        models.add(new Model(R.drawable.indian_express, "Indian Express", "The Indian Express is an English-language Indian daily newspaper which is published in Mumbai by Indian Express Group"));
 
 
         adapter = new Adapter(models, this);
@@ -54,9 +54,9 @@ public class Swipe_act_tech extends AppCompatActivity {
         viewPager.setPadding(130, 0, 130, 0);
 
         Integer[] colors_temp = {
-                getResources().getColor(R.color.color1),
-                getResources().getColor(R.color.color2),
-                getResources().getColor(R.color.color3),
+//                getResources().getColor(R.color.color1),
+//                getResources().getColor(R.color.color2),
+//                getResources().getColor(R.color.color3),
                 getResources().getColor(R.color.color4)
         };
 
