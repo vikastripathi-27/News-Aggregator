@@ -6,11 +6,13 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class BrowserActivity extends AppCompatActivity {
@@ -23,6 +25,7 @@ public class BrowserActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browser);
+
         Intent in = getIntent();
         url = in.getStringExtra("url");
 
@@ -33,6 +36,7 @@ public class BrowserActivity extends AppCompatActivity {
 
         webView = findViewById(R.id.webView);
         initWebView();
+
         webView.loadUrl(url);
     }
 

@@ -50,11 +50,15 @@ public class RSSFeedActivity extends ListActivity {
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
+
+
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
+
                 Intent in = new Intent(getApplicationContext(), BrowserActivity.class);
                 String page_url = ((TextView) view.findViewById(R.id.page_url)).getText().toString().trim();
                 in.putExtra("url", page_url);
+
                 startActivity(in);
             }
         });
