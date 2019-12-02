@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void sports_act(View view) {
-        startActivity(new Intent(MainActivity.this, Swipe_act.class).putExtra("category", category5));
+        startActivity(new Intent(MainActivity.this, Swipe_act_sports.class).putExtra("category", category5));
        // Toast.makeText(this,"CATE = "+category5,Toast.LENGTH_LONG).show();
     }
 

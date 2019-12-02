@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Swipe_act_health"></activity>
+        <activity android:name=".Swipe_act_sports"></activity>
+        <activity android:name=".Swipe_act_health" />
         <activity android:name=".Swipe_act_business" />
         <activity android:name=".Swipe_act_entertainement" />
         <activity android:name=".Swipe_act_tech" />

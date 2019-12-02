@@ -48,7 +48,7 @@ public class Swipe_act extends AppCompatActivity {
 
         top_stories_link.add("http://feeds.feedburner.com/ndtvnews-top-stories");
         top_stories_link.add("https://www.indiatoday.in/rss/home");
-        top_stories_link.add("https://zeenews.india.com/rss/india-national-news.xml");
+        top_stories_link.add("https://zeenews.india.com/rss/asia-news.xml");
         top_stories_link.add("https://www.news18.com/rss/buzz.xml");
         top_stories_link.add("http://indianexpress.com/print/front-page/feed/");
 
@@ -79,10 +79,11 @@ public class Swipe_act extends AppCompatActivity {
         viewPager.setPadding(130, 0, 130, 0);
 
         Integer[] colors_temp = {
-//                getResources().getColor(R.color.color1),
-//                getResources().getColor(R.color.color2),
-//                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4)
+                getResources().getColor(R.color.color1),
+                getResources().getColor(R.color.color2),
+                getResources().getColor(R.color.color3),
+                getResources().getColor(R.color.color4),
+                getResources().getColor(R.color.color5)
         };
 
         colors = colors_temp;

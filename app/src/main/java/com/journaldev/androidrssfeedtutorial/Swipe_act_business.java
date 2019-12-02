@@ -34,7 +34,7 @@ public class Swipe_act_business extends AppCompatActivity {
 
         technology_link.add("http://feeds.feedburner.com/ndtvprofit-latest");
         technology_link.add("https://zeenews.india.com/rss/business.xml");
-        technology_link.add("http://www.rediff.com/rss/moneyrss.xml");
+        technology_link.add("http://www.rediff.com/rss/bslide.xml");
         technology_link.add("https://economictimes.indiatimes.com/rssfeedsdefault.cms");
         technology_link.add("https://www.news18.com/rss/business.xml");
 
@@ -53,10 +53,11 @@ public class Swipe_act_business extends AppCompatActivity {
         viewPager.setPadding(130, 0, 130, 0);
 
         Integer[] colors_temp = {
-//                getResources().getColor(R.color.color1),
-//                getResources().getColor(R.color.color2),
-//                getResources().getColor(R.color.color3),
-                getResources().getColor(R.color.color4)
+                getResources().getColor(R.color.color1),
+                getResources().getColor(R.color.color2),
+                getResources().getColor(R.color.color3),
+                getResources().getColor(R.color.color4),
+                getResources().getColor(R.color.color5)
         };
 
         colors = colors_temp;
