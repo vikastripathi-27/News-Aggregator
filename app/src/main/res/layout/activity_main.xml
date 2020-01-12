@@ -15,15 +15,16 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:orientation="vertical"
-            android:background="#1EC5BA">
+            android:background="@color/colorPrimary">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingTop="50dp"
-                android:text="News Aggregator"
-                android:textColor="#000"
+                android:text="NewsFeed"
+                android:fontFamily="@font/alegreya_sans_medium"
+                android:textColor="@color/cardview_light_background"
                 android:textSize="38sp"
                 android:textStyle="bold" />
 

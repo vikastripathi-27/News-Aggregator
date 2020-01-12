@@ -1,4 +1,4 @@
-package com.journaldev.androidrssfeedtutorial;
+package com.nextlink.newsfeed;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

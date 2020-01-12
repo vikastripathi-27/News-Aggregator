@@ -1,4 +1,4 @@
-package com.journaldev.androidrssfeedtutorial;
+package com.nextlink.newsfeed;
 
 import android.animation.ArgbEvaluator;
 import android.content.Intent;
@@ -6,18 +6,19 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Swipe_act_entertainement extends AppCompatActivity {
+public class Swipe_act_tech extends AppCompatActivity {
 
     ViewPager viewPager;
     Adapter adapter;
     List<Model> models;
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
-    ArrayList<String> ent_link = new ArrayList<>();
+    ArrayList<String> technology_link = new ArrayList<>();
 
     //
 
@@ -27,21 +28,22 @@ public class Swipe_act_entertainement extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_swipe_act_entertainement);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_swipe_act_tech);
 
 
         category_title = getIntent().getStringExtra("category");
 
-        ent_link.add("http://www.rediff.com/rss/moviesreviewsrss.xml");
-        ent_link.add("https://www.indiatoday.in/rss/1206551");
-        ent_link.add("https://zeenews.india.com/rss/entertainment-news.xml");
-        ent_link.add("https://www.news18.com/rss/reviews.xml");
-        ent_link.add("http://indianexpress.com/section/entertainment/feed/");
+        technology_link.add("http://feeds.feedburner.com/gadgets360-latest");
+        technology_link.add("https://zeenews.india.com/rss/technology-news.xml");
+        technology_link.add("https://www.techrepublic.com/rssfeeds/articles/");
+        technology_link.add("https://www.news18.com/rss/tech.xml");
+        technology_link.add("http://indianexpress.com/section/technology/feed/");
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.rediff, "Rediff", "Rediff.com is an Indian news, information, entertainment and shopping web portal, founded in 1996"));
-        models.add(new Model(R.drawable.india_today, "India Today", "India Today is a weekly Indian English-language news magazine published by Living Media India Limited"));
+        models.add(new Model(R.drawable.ndtv, "NDTV", "New Delhi Television Limited (NDTV) is an Indian television media company founded in 1988 by Radhika Roy, a journalist"));
         models.add(new Model(R.drawable.zee_news, "Zee News", "Zee News is an Indian pay television channel and also the flagship property of Zee Media"));
+        models.add(new Model(R.drawable.tech_republic, "Tech Republic", "TechRepublic is a social community for IT professionals, with advice on best practices and tools for the day-to-day needs of IT decision-makers"));
         models.add(new Model(R.drawable.news18, "News 18", "Network18 Media informally is referred to as the Network18 Group which is an Indian media and entertainment group"));
         models.add(new Model(R.drawable.indian_express, "Indian Express", "The Indian Express is an English-language Indian daily newspaper which is published in Mumbai by Indian Express Group"));
 
@@ -98,43 +100,43 @@ public class Swipe_act_entertainement extends AppCompatActivity {
 
         //default
         if(x==null) {
-            x = "Rediff";
+            x = "NDTV";
         }
-        if(category_title.equals("entertainement")) {
+        if(category_title.equals("technology")) {
 
-            if(x.equals("Rediff")) {
-                ent_rediff();
+            if(x.equals("NDTV")) {
+                tech_ndtv();
             }
-            else if(x.equals("India Today")) {
-                ent_india_today();
+            else if(x.equals("Tech Republic")) {
+                tech_republic();
             }
             else if(x.equals("Zee News")) {
-                ent_zee();
+                tech_zee_news();
             }
             else if(x.equals("News 18")) {
-                ent_news_18();
+                tech_news_18();
             }
             else if(x.equals("Indian Express")) {
-                ent_indian_express();
+                tech_indian_express();
             }
         }
 
 
     }
 
-    public void ent_rediff() {
-        startActivity(new Intent(Swipe_act_entertainement.this, RSSFeedActivity.class).putExtra("rssLink", ent_link.get(0)));
+    public void tech_ndtv() {
+        startActivity(new Intent(Swipe_act_tech.this, RSSFeedActivity.class).putExtra("rssLink", technology_link.get(0)));
     }
-    public void ent_india_today() {
-        startActivity(new Intent(Swipe_act_entertainement.this, RSSFeedActivity.class).putExtra("rssLink", ent_link.get(1)));
+    public void tech_republic() {
+        startActivity(new Intent(Swipe_act_tech.this, RSSFeedActivity.class).putExtra("rssLink", technology_link.get(2)));
     }
-    public void ent_zee() {
-        startActivity(new Intent(Swipe_act_entertainement.this, RSSFeedActivity.class).putExtra("rssLink", ent_link.get(2)));
+    public void tech_zee_news() {
+        startActivity(new Intent(Swipe_act_tech.this, RSSFeedActivity.class).putExtra("rssLink", technology_link.get(1)));
     }
-    public void ent_news_18() {
-        startActivity(new Intent(Swipe_act_entertainement.this, RSSFeedActivity.class).putExtra("rssLink", ent_link.get(3)));
+    public void tech_news_18() {
+        startActivity(new Intent(Swipe_act_tech.this, RSSFeedActivity.class).putExtra("rssLink", technology_link.get(3)));
     }
-    public void ent_indian_express() {
-        startActivity(new Intent(Swipe_act_entertainement.this, RSSFeedActivity.class).putExtra("rssLink", ent_link.get(4)));
+    public void tech_indian_express() {
+        startActivity(new Intent(Swipe_act_tech.this, RSSFeedActivity.class).putExtra("rssLink", technology_link.get(4)));
     }
 }

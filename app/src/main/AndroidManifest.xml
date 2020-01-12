@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.journaldev.androidrssfeedtutorial">
+    package="com.nextlink.newsfeed">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,22 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Swipe_act_sports"></activity>
-        <activity android:name=".Swipe_act_health" />
-        <activity android:name=".Swipe_act_business" />
-        <activity android:name=".Swipe_act_entertainement" />
-        <activity android:name=".Swipe_act_tech" />
-        <activity android:name=".DetailActivity" />
-        <activity android:name=".Swipe_act" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.nextlink.newsfeed.Swipe_act_sports"></activity>
+        <activity android:name="com.nextlink.newsfeed.Swipe_act_health" />
+        <activity android:name="com.nextlink.newsfeed.Swipe_act_business" />
+        <activity android:name="com.nextlink.newsfeed.Swipe_act_entertainement" />
+        <activity android:name="com.nextlink.newsfeed.Swipe_act_tech" />
+        <activity android:name="com.nextlink.newsfeed.DetailActivity" />
+        <activity android:name="com.nextlink.newsfeed.Swipe_act" />
+        <activity android:name="com.nextlink.newsfeed.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BrowserActivity" />
-        <activity android:name=".RSSFeedActivity" />
+        <activity android:name="com.nextlink.newsfeed.BrowserActivity" />
+        <activity android:name="com.nextlink.newsfeed.RSSFeedActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

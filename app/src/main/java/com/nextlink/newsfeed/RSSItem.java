@@ -1,4 +1,4 @@
-package com.journaldev.androidrssfeedtutorial;
+package com.nextlink.newsfeed;
 
 
 public class RSSItem {

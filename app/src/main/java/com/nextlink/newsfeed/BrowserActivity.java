@@ -1,18 +1,18 @@
-package com.journaldev.androidrssfeedtutorial;
+package com.nextlink.newsfeed;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.view.View;
+import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class BrowserActivity extends AppCompatActivity {
@@ -20,10 +20,12 @@ public class BrowserActivity extends AppCompatActivity {
 
     WebView webView;
     String url;
+    ProgressDialog prDialog;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_browser);
 
         Intent in = getIntent();
@@ -50,6 +52,9 @@ public class BrowserActivity extends AppCompatActivity {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
+                prDialog = new ProgressDialog(BrowserActivity.this);
+                prDialog.setMessage("Loading your news feed ...");
+                prDialog.show();
             }
 
             @Override
@@ -61,6 +66,9 @@ public class BrowserActivity extends AppCompatActivity {
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
+                if(prDialog!=null){
+                    prDialog.dismiss();
+                }
             }
 
             @Override
